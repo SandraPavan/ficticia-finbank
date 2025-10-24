@@ -1,0 +1,140 @@
+{
+  "accounts": [
+    {
+      "id": "ACC-10001",
+      "accountId": "ACC-10001",
+      "customerId": "CUST-001",
+      "type": "checking",
+      "currency": "BRL",
+      "balance": 500.0,
+      "status": "ACTIVE",
+      "limit": 3000.0,
+      "createdAt": "2025-10-16T20:00:00Z"
+    },
+    {
+      "id": "ACC-10002",
+      "accountId": "ACC-10002",
+      "customerId": "CUST-002",
+      "type": "checking",
+      "currency": "BRL",
+      "balance": 1250.0,
+      "status": "ACTIVE",
+      "limit": 4000.0,
+      "createdAt": "2025-10-10T14:00:00Z"
+    },
+    {
+      "id": "ACC-10003",
+      "accountId": "ACC-10003",
+      "customerId": "CUST-003",
+      "type": "savings",
+      "currency": "BRL",
+      "balance": 3200.0,
+      "status": "ACTIVE",
+      "limit": 2000.0,
+      "createdAt": "2025-10-12T09:30:00Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TXN-8752301-D",
+      "transactionId": "TXN-8752301",
+      "accountId": "ACC-10001",
+      "counterpartyAccountId": "ACC-10002",
+      "amount": -250.0,
+      "absoluteAmount": 250.0,
+      "currency": "BRL",
+      "transactionType": "PIX",
+      "description": "Pagamento de serviço",
+      "status": "COMPLETED",
+      "timestamp": "2025-10-16T20:05:12Z",
+      "balanceAfter": 250.0
+    },
+    {
+      "id": "TXN-8752301-C",
+      "transactionId": "TXN-8752301",
+      "accountId": "ACC-10002",
+      "counterpartyAccountId": "ACC-10001",
+      "amount": 250.0,
+      "absoluteAmount": 250.0,
+      "currency": "BRL",
+      "transactionType": "PIX",
+      "description": "Pagamento de serviço",
+      "status": "COMPLETED",
+      "timestamp": "2025-10-16T20:05:12Z"
+    },
+    {
+      "id": "TXN-8752299-D",
+      "transactionId": "TXN-8752299",
+      "accountId": "ACC-10001",
+      "counterpartyAccountId": "ACC-10010",
+      "amount": -1000.0,
+      "absoluteAmount": 1000.0,
+      "currency": "BRL",
+      "transactionType": "TED",
+      "description": "Transferência para investimento",
+      "status": "COMPLETED",
+      "timestamp": "2025-10-15T13:20:00Z",
+      "balanceAfter": 250.0
+    }
+  ],
+  "balances": [
+    {
+      "id": "ACC-10001",
+      "accountId": "ACC-10001",
+      "availableBalance": 250.0,
+      "currency": "BRL",
+      "lastUpdated": "2025-10-16T20:10:00Z"
+    },
+    {
+      "id": "ACC-10002",
+      "accountId": "ACC-10002",
+      "availableBalance": 1500.0,
+      "currency": "BRL",
+      "lastUpdated": "2025-10-16T20:10:00Z"
+    },
+    {
+      "id": "ACC-10003",
+      "accountId": "ACC-10003",
+      "availableBalance": 3200.0,
+      "currency": "BRL",
+      "lastUpdated": "2025-10-16T20:10:00Z"
+    }
+  ],
+  "billings": [
+    {
+      "id": "BILL-5509",
+      "billingId": "BILL-5509",
+      "accountId": "ACC-10003",
+      "amount": 1200.0,
+      "status": "PENDING",
+      "barcode": "23791828200001200009876543212345678900000000",
+      "description": "Mensalidade Premium",
+      "expirationDate": "2025-10-30",
+      "createdAt": "2025-10-16T20:15:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "qa.tester",
+      "password": "Secure@123",
+      "tokenType": "Bearer",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.mocked",
+      "expiresIn": 3600,
+      "roles": [
+        "QA",
+        "ADMIN"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "2025-09",
+      "period": "2025-09",
+      "totalTransactions": 12500,
+      "totalVolume": 5470000.75,
+      "avgProcessingTimeMs": 185,
+      "failedTransactions": 35
+    }
+  ]
+}
