@@ -4,6 +4,13 @@
 
 API planejada pela FinBank para gerenciamento de contas e transações bancárias. Este documento detalha os principais recursos a serem cobertos pela automação, incluindo testes de regressão, smoke tests e testes de contrato.
 
+Foi criada para o [Workshop: FinBank — Aquele em que a Qualidade vai além do Código](https://www.canva.com/design/DAG2v64EgeA/7tE_8mYJ19_M2cEfFHiecQ/edit?utm_content=DAG2v64EgeA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) em conjunto com a [Daniela Lima](https://www.linkedin.com/in/daniela-lima-20270985/)
+
+
+Ao fim do workshop, trouxemos [metricas, ROI e indicadores de eficiência](https://github.com/SandraPavan/ficticia-finbank/blob/main/dados/dados-ROI-Metricas.md) como exemplo da apresentação que podemos fazer para time quando evoluimos o processo de qualidade.
+
+Durante o processo, trouxemos a proposta de criar uma [mapa de causa e dores](https://github.com/SandraPavan/ficticia-finbank/blob/main/dados/descobrindo-causa-raiz.md).
+
 ## 🚀 Endpoints
 
 ### 1. Criação de Conta
@@ -78,7 +85,7 @@ Executa uma transação entre contas (PIX ou TED).
 
 ### 3. Consulta de Saldo
 
-> **GET** `/balance/{accountId}`
+> **GET** `/balances/{accountId}`
 
 Retorna o saldo atual de uma conta.
 
@@ -179,7 +186,7 @@ curl -X POST http://localhost:3000/transactions \
 #### Consultar saldo
 
 ```bash
-curl http://localhost:3000/balance/ACC-10001
+curl http://localhost:3000/balances/ACC-10001
 ```
 
 #### Listar transações
