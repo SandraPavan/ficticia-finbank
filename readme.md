@@ -11,6 +11,8 @@ Ao fim do workshop, trouxemos [metricas, ROI e indicadores de eficiência](https
 
 Durante o processo, trouxemos a proposta de criar uma [mapa de causa e dores](https://github.com/SandraPavan/ficticia-finbank/blob/main/dados/descobrindo-causa-raiz.md).
 
+Aqui temos como foi desafio de construir esse workshop: [Aquele em Que Eu Virei Facilitadora: Como Criei Meu Primeiro Workshop de QA](https://medium.com/@dani.tawane/aquele-em-que-eu-virei-facilitadora-como-criei-meu-primeiro-workshop-de-qa-8ca6ef52dcc3)
+
 ## 🚀 Endpoints
 
 ### 1. Criação de Conta
